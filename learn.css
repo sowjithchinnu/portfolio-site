@@ -8,6 +8,12 @@ html
     text-align:center;
     margin:40px;
     }
+    .container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px;
+    text-align:center;
+    }
 
     h1{
     color:#38bbf4;
@@ -34,3 +40,19 @@ html
     hr{
     margin:40px 0;
     }
+
+    .project{
+    background:#1e293b;
+    padding:20px;
+    margin:20px 0;
+    border-radius:20px;
+    }
+
+    button{
+    background:#38bdf8;
+    border:none;
+    padding:10px 20px;
+    color:black;
+    border-radius:5px;
+    cursor:pointer;
+}
