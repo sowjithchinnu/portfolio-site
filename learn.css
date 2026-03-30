@@ -41,18 +41,19 @@ html
     margin:40px 0;
     }
 
+    /* a{
+    color:#38bdf8;
+    text-decoration:none;
+    font-weight:bold;
+    }
+
+    a:hover{
+    color:#22c55e;
+    } */
+
     .project{
     background:#1e293b;
     padding:20px;
     margin:20px 0;
     border-radius:20px;
     }
-
-    button{
-    background:#38bdf8;
-    border:none;
-    padding:10px 20px;
-    color:black;
-    border-radius:5px;
-    cursor:pointer;
-}
