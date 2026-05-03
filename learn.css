@@ -1,108 +1,91 @@
-/* Beginner Style CSS */
-
 body {
-    font-family: 'Outfit', Arial, sans-serif;
-    background-color: #222222;
-    color: #eeeeee;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Hide complex background visuals */
-.background-blob {
-    display: none;
+    font-size: 26px;
+    font-style: italic;
+    font-family: sans-serif;
+    background-color: #130e43;
+    color: whitesmoke;
+    text-align: center;
+    margin: 40px;
 }
 
 .container {
-    width: 80%;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #333333;
-    border-radius: 8px;
-}
-
-header {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
     text-align: center;
-    border-bottom: 2px solid #555555;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
 }
 
 h1 {
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.highlight {
-    color: #4da6ff;
-    font-weight: bold;
-}
-
-.subtitle {
-    color: #aaaaaa;
+    color: #38bbf4;
 }
 
 h2 {
-    color: #4da6ff;
-    border-bottom: 1px solid #444444;
-    padding-bottom: 5px;
-}
-
-/* Skills styling - beginner friendly lists */
-.skills-list {
-    padding-left: 40px;
-}
-
-.skills-list li {
-    margin-bottom: 10px;
-}
-
-/* Project cards - simple box */
-.project-card {
-    background-color: #444444;
-    border: 1px solid #555555;
-    padding: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.project-content h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-/* Contact Links */
-.contact-links {
-    padding-top: 10px;
-}
-
-.contact-btn {
-    display: inline-block;
-    background-color: #4da6ff;
-    color: #111111;
-    padding: 10px 15px;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.contact-btn:hover {
-    background-color: #3388dd;
-}
-
-footer {
+    color: #35e475;
     margin-top: 40px;
-    text-align: center;
-    color: #888888;
 }
 
-/* Disable fade-in animations since we want a simple beginner look */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+p {
+    font-size: 24px;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ee0010;
+}
+
+.project {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
 .fade-in {
-    opacity: 1;
-    transform: none;
-    animation: none;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
